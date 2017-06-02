@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Bradford | Web Developer</title>
+    <link rel="SHORTCUT ICON" href="../images/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/72bd55eeac.js"></script>
+  </head>
+  <body ng-app="app" class="container">
+    <div class="logo-menu-bar" ng-controller="MenuController">
+      <article class="inline logo"><a href="#!/home">Joshua Bradford</a> </article>
+      <i class="fa fa-bars  fa-2x menu-select" aria-hidden="true" ng-click="showMenu()"></i>
+      <article class="inline menu" ng-class="ngMenu">
+        <a class="inline menu-button" ng-click="goToAbout()">About</a>
+        <a class="inline menu-button" ng-click="goToPortfolio()">Portfolio</a>
+        <a class="inline menu-button" href="#!/resume">Resume</a>
+        <a class="inline menu-button" ng-click="goToInterviews()">Interviews</a>
+        <a class="inline menu-button" href="https://medium.com/@joshuabradford">Blog</a>
+        <a class="inline menu-button" ng-click="goToContact()">Contact</a>
+      </article>
+
+    </div>
+    <div ui-view></div>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
+
+
+<!-- <div id="scrollArea" ng-controller="HomeController">
+  <a ng-click="gotoBottom()">Go to bottom</a>
+  <a id="bottom"></a> You're at the bottom!
+</div> -->
