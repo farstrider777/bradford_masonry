@@ -1,4 +1,4 @@
-###My portfolio site###
+###Bradford Masonry###
 
 Skills practiced
 
@@ -9,6 +9,3 @@ Skills practiced
 2. Multi platform testing
   * Continuously test on different devices.
   * Fix display errors, add and remove features to increase usability.
-
-
-TO VIEW GOTO: http://tiy-josh-portfolio.surge.sh/
